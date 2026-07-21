@@ -1,0 +1,19 @@
+# Navigation Links
+#   Anchor links (`/#id`) target section `id`s defined in content/_index.md.
+#   The site name/logo already links to the top (the About/biography section).
+main:
+  - name: Experience
+    url: /#experience
+    weight: 20
+  - name: Projects
+    url: /#projects
+    weight: 30
+  - name: Publications
+    url: /#publications
+    weight: 50
+  - name: Events
+    url: /#events
+    weight: 60
+  - name: Contact
+    url: /#contact
+    weight: 80

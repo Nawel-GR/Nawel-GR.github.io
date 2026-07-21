@@ -1,0 +1,42 @@
+/* Biography (About): photo on the left, content on the right — desktop only.
+   The default resume-biography block stacks everything centered; this turns it
+   into a two-column layout and centers the whole group on the page. */
+@media (min-width: 768px) {
+  #profile.resume-biography {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 2.5rem;
+    align-items: center;
+    justify-items: start;
+    text-align: left;
+    /* Center the photo + content group instead of hugging the left edge. */
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* All content goes in the right column, stacked in order. */
+  #profile.resume-biography > * {
+    grid-column: 2;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* The avatar sits in the left column, vertically centered against the text. */
+  #profile.resume-biography > .avatar-wrapper {
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  /* Left-align the social icons and bio (they're centered by default). */
+  #profile.resume-biography ul.network-icon {
+    justify-content: flex-start;
+  }
+  #profile.resume-biography .prose {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

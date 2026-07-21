@@ -1,0 +1,93 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Nahuel Gómez Raguileo
+  given: Nahuel
+  family: Gómez Raguileo
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+status:
+  icon: ''
+role: Ph.D. Student · Computer Engineer (M.Sc. Computer Science)
+bio: |
+  I'm a Ph.D. student and Computer Engineer (M.Sc.) at Universidad de Chile,
+  specializing in **applied Artificial Intelligence** and multimodal models for
+  healthcare, psychology, and IoT systems.
+
+  I build **end-to-end machine learning pipelines**, natural language processing
+  models, and AI solutions in enterprise and clinical settings — from raw audio
+  and biomedical signals to real-time predictions.
+
+affiliations:
+  - name: Universidad de Chile
+    url: https://www.uchile.cl/
+
+links:
+  - icon: at-symbol
+    url: mailto:nahuel.gomez@ug.uchile.cl
+    label: E-mail Me
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/nahuel-gomez-raguileo/
+  - icon: brands/github
+    url: https://github.com/Nawel-GR
+
+interests:
+  - Applied Artificial Intelligence
+  - Multimodal Models
+  - Natural Language Processing (NLP)
+  - Healthcare AI
+  - IoT
+
+# --- Education (rendered in the experience block) ----------------------------
+education:
+  - degree: Ph.D. in Computer Science — Applied Artificial Intelligence
+    institution: Universidad de Chile
+    start: 2026-03-01
+    # no `end` → in progress
+    summary: |
+      Doctoral research in applied Artificial Intelligence. In progress —
+      expected completion December 2029.
+  - degree: M.Sc. in Computer Science
+    institution: Universidad de Chile
+    start: 2024-01-01
+    end: 2025-06-30
+    summary: |
+      Master's Thesis — Highest Honors, **Best Computer Science Thesis 2025**:
+      "Natural Language Processing for the Diagnosis of Postoperative Delirium."
+      Built an end-to-end diagnostic pipeline combining Transformer-based
+      semantic analysis of raw audio with tabular models for clinical data.
+  - degree: B.S. in Computer Science and Engineering (Computer Engineer)
+    institution: Universidad de Chile
+    start: 2018-03-01
+    end: 2023-12-31
+
+# --- Work experience (rendered in the resume-experience block) ---------------
+experience:
+  - role: Research Engineer
+    org: Universidad de Chile · Santiago
+    start: 2023-10-01
+    # no `end` → current position
+    summary: |
+      Designed and built the real-time machine learning engine for a clinical
+      diagnostic system, analyzing live EEG signals and tabular data. Developed
+      the ML backend for a pose-estimation mobile app tracking rehabilitation
+      exercises, supporting the reduction of public healthcare waiting lists.
+  - role: Data / AI Engineer
+    org: Customer Trigger · Santiago
+    start: 2023-05-01
+    end: 2026-01-31
+    summary: |
+      Trained machine learning and deep learning models for personalized
+      messaging across retail, insurance, automotive and healthcare, increasing
+      monthly sales by 5%. Analyzed large-scale datasets for record completeness
+      and produced automated reports to support strategic decision-making.
+  - role: Data Engineer — Treasury
+    org: Banchile Inversiones · Santiago
+    start: 2022-12-01
+    end: 2023-04-30
+    summary: |
+      Automated key operational processes and eliminated workflow bottlenecks
+      within the Treasury team by building and deploying bots in a Microsoft
+      ecosystem.
