@@ -54,3 +54,12 @@ body {
     margin-right: 0;
   }
 }
+
+/* Mobile: give the biography its own horizontal padding so the name, headline
+   and bio text aren't glued to the screen edges (they sit flush without this). */
+@media (max-width: 767px) {
+  #profile.resume-biography {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
