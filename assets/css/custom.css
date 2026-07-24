@@ -1,3 +1,17 @@
+/* Prevent horizontal scroll / "incorrect horizontal bounds" on mobile (esp. iOS Safari).
+   The theme leaves html/body at overflow-x: visible with no max-width, so any element
+   that renders a hair wider than the viewport — card hover transforms (translate-x),
+   sticky :hover states after a tap, sub-pixel rounding — lets the page slide sideways.
+   Clipping the root contains all of it with no visual change and without breaking the
+   sticky header (clip, unlike hidden, doesn't create a scroll container). */
+html {
+  overflow-x: clip;
+  max-width: 100%;
+}
+body {
+  max-width: 100%;
+}
+
 /* Biography (About): photo on the left, content on the right — desktop only.
    The default resume-biography block stacks everything centered; this turns it
    into a two-column layout and centers the whole group on the page. */
